@@ -1,6 +1,7 @@
 :root {
     font-size: 62.5%;
     --background-color: #2D2D2D;
+    --contrast: #00D5E4;
 }
 
 
@@ -18,6 +19,13 @@ body {
     background-color: var(--background-color);
 }
 
+.wrapper {
+    max-width: 95%;
+    margin: 0 auto;
+    padding-inline: 1em;
+    margin-bottom: 6rem;
+}
+
 .flex-head {
     display: flex;
     justify-content: space-around;
@@ -28,6 +36,42 @@ body {
 .logo-img {
     width: 7.3rem;
     height: 4.3rem;;
+}
+
+.main-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.zag {
+    font-size: 3rem;
+    font-weight: 900;
+    color:white;
+    text-align: left;
+}
+
+.podzag {
+    width:100%;
+}
+
+.opis {
+    display:inline;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.contrast-text {
+    color: #00D5E4;
+    font-weight: 900;
+}
+
+.motor {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 333px;
+    height: 346px;
 }
 
 @media (max-width: 850px){
@@ -51,12 +95,7 @@ body {
         clip: rect(0 0 0 0);
         overflow: hidden;
     }
-    .wrapper {
-        max-width: 90%px;
-        margin: 0 auto;
-        padding-inline: 1em;
-        margin-bottom: 6rem;
-    }
+    
 }
 
 @media (min-width: 850px){
@@ -85,6 +124,35 @@ body {
         color: white;
         font-weight: 400;
         font-size: 1.6rem;
+    }
+
+}
+
+@media (min-width: 1460px){
+    .zag {
+        font-size: 4.5rem;
+        margin-top: 248px;
+        max-width: 821px;
+    }
+
+    .opis {
+        font-size: 2.4rem;
+        max-width: 645px;
+    }
+
+    .motor {
+        display: block;
+        position: absolute;
+        left: 50%;
+        width: 811px;
+        height: 842px;
+    }
+
+    .wrapper {
+        max-width: 1430px;
+        margin: 0 auto;
+        padding-inline: 1em;
+        margin-bottom: 6rem;
     }
 }
 
